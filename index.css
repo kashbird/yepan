@@ -1,0 +1,1348 @@
+@import url('https://fonts.googleapis.com/css2?family=Noto+Sans+KR:wght@100;300;400;500;700;900&display=swap');
+
+body {
+  margin: 0;
+  padding: 0;
+  font-family: 'Noto Sans KR', sans-serif;
+  height: 8814px;
+  background-color: #FCF9F9;
+  letter-spacing: -1px;
+  color: #222;
+}
+
+/* 공용 */
+.title{
+  width: 100%;
+  display: flex;
+  align-items: center;
+  margin-bottom: 40px;
+}
+
+h1 {
+  font-size: 28px;
+  font-weight: 500;
+  float: left;
+  margin: 0;
+  margin-right: 6px;
+  cursor: pointer;
+}
+
+.arrow-right {
+  width: 20px;
+  height: 20px;
+  background-image: url(images/icons/arrow-right.png);
+  background-size: cover;
+  float: left;
+}
+
+/* 헤더 */
+#header {
+  position: absolute;
+  top: 200;
+  left: 0;
+  right: 0;
+  width: 100%;
+  padding: 0px 20px 0px 20px;
+  z-index: 99;
+}
+
+#header .header-inner {
+  margin: 0 auto;
+  background-color: transparent;
+  width: 1290px;
+  padding: 28px 0px;
+  display: flex;
+  align-items: center;
+}
+
+#header #logo {
+  background-image: url(images/logo.png);
+  background-size: 100px;
+  background-position: center;
+  width: 100px;
+  height: 34px;
+  flex-basis: 100px; 
+  cursor: pointer;
+}
+
+#header .middle-area {
+  flex-basis: 400px; 
+  text-align: center;
+  margin-left: 364px;
+  height: 24px;
+}
+
+#header .middle-area .nav {
+  font-family: 'Noto Sans KR', sans-serif;
+  color: #FCF9F9;
+  border: none;
+  background-color: transparent;
+  font-size: 16px;
+  margin-right: 48px;
+  letter-spacing: -0.5px;
+  padding: 0;
+  cursor: pointer;
+}
+
+#header .middle-area .nav:nth-last-child(1) {
+  margin: 0;
+}
+
+#header .right-area {
+  margin-left: auto;
+  text-align: center;
+  flex-basis: 112px;
+  font-size: 0;
+  line-height: 0;
+}
+
+#header .icons {
+  margin-right: 20px;
+  background-color: transparent;
+  border: none;
+  width: 24px;
+  height: 24px;
+  padding: 0;
+  cursor: pointer;
+}
+
+#header .icons:nth-child(1) {
+  background-image: url(images/icons/notice.png);
+  background-size: cover;
+}
+#header .icons:nth-child(2) {
+  background-image: url(images/icons/user.png);
+  background-size: cover;
+}
+#header .icons:nth-child(3) {
+  background-image: url(images/icons/menu.png);
+  background-size: cover;
+  margin: 0;
+}
+
+/* 배너 */
+
+.container {
+  width: 100%;
+  height: 700px;
+  display: flex;
+  position: relative;
+}
+
+.container .container-inner {
+  background-color: transparent;
+  flex-basis: 210px;
+  position: absolute;
+  z-index: 99;
+  right: 0;
+}
+
+.container .banner {
+  background-image: url(images/main.png);
+  background-size: cover;
+  width:  100%;
+  height: 700px;
+}
+
+.container .banner-icons {
+  background-color: transparent;
+  height: 700px;
+  width: 210px;
+
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  flex-direction: column;
+}
+
+
+.container .b-icons {
+  margin-bottom: 20px;
+  background-color: #FCF9F9;
+  border-radius: 5px;
+  border: none;
+  width: 10px;
+  height: 10px;
+  padding: 0;
+  cursor: pointer;
+}
+
+.container .b-icons:nth-child(n+2) {
+  opacity: 50%;
+}
+
+.container .b-icons:nth-last-child(1) {
+  margin: 0;
+}
+
+/* 검색 */
+
+.article {
+  width: 100%;
+  height: 456px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+.article .article-inner {
+  width: 600px;
+}
+
+.article h2 {
+  font-size: 34px;
+  letter-spacing: -0.5px;
+  text-align: center;
+  margin:0px 0px 30px 0px
+}
+
+.article .article-inner #search {
+  position: relative;
+  display: flex;
+  align-items: center;
+}
+
+.article .article-inner #search .search {
+  border: none;
+  border-radius: 50px;
+  background-color: white;
+  box-shadow: 0px 0px 3px #c4c4c4;
+  width: 100%;
+  height: 60px;
+  
+}
+
+.article .article-inner .search-icon {
+  background-image: url(images/icons/search_icon.png);
+  background-size: cover;
+  position: absolute;
+  z-index: 99;
+  right: 30px;
+
+  width: 36px;
+  height: 36px;
+}
+
+.article .words {
+  color: #c4c4c4;
+  text-align: center;
+  padding: 0;
+  margin-top: 20px;
+}
+
+.article .words li {
+  display: inline-block;
+  margin-right: 20px;
+  cursor: pointer;
+}
+
+.article .words li:nth-last-child(1) {
+  margin: 0;
+}
+
+/* 커뮤니티 바로가기 */
+
+#community {
+  width: 100%;
+  height: 380px;
+  display: flex;
+  justify-content: center;
+  margin-bottom: 100px;
+}
+
+#community .community-inner {
+  width: 1290px;
+  height: 380px;
+}
+
+#community .community-inner .shortcut {
+  height: 300px;
+}
+
+#community .community-inner .shortcut .sc-button {
+  width: 416px;
+  height: 140px;
+  background-color: white;
+  box-shadow: 0px 0px 3px #c4c4c4;
+  border-radius: 5px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  float: left;
+  margin-right: 21px;
+  margin-bottom: 20px;
+  cursor: pointer;
+}
+
+#community .community-inner .shortcut .sc-button:nth-child(3n) {
+  margin: 0;
+}
+
+#community .community-inner .shortcut .sc-button .button-inner {
+  width: 316px;
+  height: 80px;
+  display: flex;
+  align-items: center;
+}
+
+.button-inner .sc-img {
+  width: 60px;
+  height: 60px;
+}
+
+.button-inner .information {
+  background-image: url(images/icons/information.png);
+  background-size: cover;
+}
+.button-inner .game {
+  background-image: url(images/icons/game.png);
+  background-size: cover;
+}
+.button-inner .general {
+  background-image: url(images/icons/general.png);
+  background-size: cover;
+}
+.button-inner .apple {
+  background-image: url(images/icons/apple.png);
+  background-size: cover;
+}
+.button-inner .samsung {
+  background-image: url(images/icons/samsung.png);
+  background-size: cover;
+}
+.button-inner .review {
+  background-image: url(images/icons/review.png);
+  background-size: cover;
+}
+
+.button-inner .sc-text {
+  width: 200px;
+  height: 80px;
+  margin-left: auto;
+}
+
+.button-inner .sc-text span {
+  width: 200px;
+  display: inline-block;
+  text-align: center;
+  
+}
+
+.button-inner .sc-text .title {
+  font-size: 18px;
+  font-weight: 500;
+  margin-bottom: 14px;
+}
+
+.button-inner .sc-text .title-text {
+  font-size: 14px;
+  font-weight: 200;
+}
+
+/* 갤러리 */
+
+#gallery {
+  width:100%;
+  height: 467px;
+  margin-bottom: 100px;
+}
+
+#gallery .gallery-inner {
+  width: 1290px;
+  height: 467px;
+  margin: 0 auto;
+}
+
+
+#gallery .gallery-inner .box {
+  width: 242px;
+  height: 387px;
+  float: left;
+  margin-right: 20px;
+}
+
+#gallery .gallery-inner .box:nth-last-child(1) {
+  margin: 0;
+}
+
+.gallery-inner .box .img {
+  width: 242px;
+  height: 260px;
+  margin-bottom: 10px;
+  border-radius: 5px;
+  cursor: pointer;
+  box-shadow: 0px 0px 3px #c4c4c4;
+}
+
+/* 갤러리 사진 */
+  .gallery-inner .box .img1 {
+    background-image: url(images/product/nintendo.jpg);
+    background-size: cover;
+  }
+  .gallery-inner .box .img2 {
+    background-image: url(images/product/trip.jpg);
+    background-size: cover;
+    background-position: top;
+  }
+  .gallery-inner .box .img3 {
+    background-image: url(images/product/laptop.jpg);
+    background-size: cover;
+    background-position: center;
+  }
+  .gallery-inner .box .img4 {
+    background-image: url(images/product/studio.jpg);
+    background-size: cover;
+    background-position: center;
+  }
+  .gallery-inner .box .img5 {
+    background-image: url(images/product/TV.jpg);
+    background-size: cover;
+    background-position: center;
+  }
+/*  */
+
+.gallery-inner .box .text-box {
+  width: 242px;
+  height: 52px;
+  margin-bottom: 10px;
+  cursor: pointer;
+}
+
+.gallery-inner .box .text {
+  font-size: 16px;
+  font-weight: 500;
+
+}
+
+.gallery-inner .box #user-box {
+  width: 242px;
+  height: 22px;
+  margin-bottom: 10px;
+}
+
+.gallery-inner .box #user-box .profile {
+  width: 22px;
+  height: 22px;
+  margin-right: 10px;
+  float: left;
+}
+
+.gallery-inner .box #user-box .name {
+  width: 210px;
+  height: 22px;
+  font-size: 14px;
+  font-weight: 200;
+}
+
+/* 프로필 사진 */
+  .gallery-inner .box #user-box .user1 {
+    background-image: url(images/person/woman1.jpg);
+    background-size: cover;
+  }
+  .gallery-inner .box #user-box .user2 {
+    background-image: url(images/person/picture.jpg);
+    background-size: cover;
+  }
+  .gallery-inner .box #user-box .user3 {
+    background-image: url(images/person/coder.jpg);
+    background-size: cover;
+  }
+  .gallery-inner .box #user-box .user4 {
+    background-image: url(images/person/studioPerson.jpg);
+    background-size: cover;
+  }
+  .gallery-inner .box #user-box .user5 {
+    background-image: url(images/person/woman2.jpg);
+    background-size: cover;
+  }
+/*  */
+
+.gallery-inner .box .count-box {
+  width: 242px;
+  height: 23px;
+  display: flex;
+  align-items: center;
+}
+
+.gallery-inner .box .count-box .icon {
+  float: left;
+  margin-right: 10px;
+}
+
+.gallery-inner .box .count-box .view {
+  width: 22px;
+  height: 22px;
+  background-image: url(images/icons/view.png);
+  background-size: cover;
+}
+
+.gallery-inner .box .count-box .scrab {
+  width: 22px;
+  height: 22px;
+  background-image: url(images/icons/scrab.png);
+  background-size: cover;
+  background-repeat: no-repeat;
+}
+
+.gallery-inner .box .count-box .count {
+  float: left;
+  margin-right: 20px;
+  font-size: 14px;
+  font-weight: 200;
+}
+
+/* 기획전 */
+#special {
+  width: 100%;
+  height: 755px;
+  margin-bottom: 100px;
+}
+
+#special .special-inner {
+  width: 1290px;
+  height: 755px;
+  margin-bottom: 40px;
+  margin: 0 auto;
+}
+
+#special .special-inner .contents {
+  height: 675px;
+  
+}
+
+#special .special-inner .contents .first-box {
+  height: 500px;
+  margin-bottom: 20px;
+}
+
+.special-inner .contents .first-box .content1 {
+  width: 925px;
+  height: 500px;
+  border-radius: 5px;
+  float: left;
+  background-image: url(images/banners/macStudio.png);
+  background-size: cover;
+  background-position: center;
+  margin-right: 20px;
+  cursor: pointer;
+  box-shadow: 0px 0px 3px #c4c4c4;
+}
+
+.special-inner .contents .first-box .event {
+  float: left;
+  position: relative;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  box-shadow: 0px 0px 3px #c4c4c4;
+}
+
+.special-inner .contents .first-box .event .content2 {
+  width: 345px;
+  height: 500px;
+  border-radius: 5px;
+  background-image: url(images/banners/gram.png);
+  background-size: cover;
+  cursor: pointer;
+}
+
+.special-inner .contents .first-box .event .list {
+  position: absolute;
+  z-index: 99;
+  top: 20px;
+  right: 20px;
+  width: 100px;
+  height: 10px;
+}
+
+.special-inner .contents .first-box .event .list .index {
+  margin-bottom: 20px;
+  background-color: #FCF9F9;
+  border-radius: 5px;
+  border: none;
+  width: 10px;
+  height: 10px;
+  padding: 0;
+  cursor: pointer;
+  margin-right: 8px;
+  float: left;
+}
+
+.special-inner .contents .first-box .event .list .index:nth-last-child(1) {
+  margin: 0;
+}
+
+.special-inner .contents .first-box .event .list .index:nth-child(n+2){
+  opacity: 50%;
+}
+
+
+
+#special .special-inner .contents .second-box {
+  height: 155px;
+}
+
+.special-inner .contents .second-box .content {
+  width: 416px;
+  height: 155px;
+  float: left;
+  cursor: pointer;
+  margin-right: 21px;
+  border-radius: 5px;
+  box-shadow: 0px 0px 3px #c4c4c4;
+}
+
+.special-inner .contents .second-box .content:nth-last-child(1) {
+  margin: 0;
+}
+
+.special-inner .contents .second-box .content-img1 {
+  background-image: url(images/banners/tcl.png);
+  background-size: cover;
+  background-position: center;
+}
+
+.special-inner .contents .second-box .content-img2 {
+  background-image: url(images/banners/radersDay.png);
+  background-size: cover;
+  background-position: center;
+}
+
+.special-inner .contents .second-box .content-img3 {
+  background-image: url(images/banners/galaxyTab.png);
+  background-size: cover;
+  background-position: center;
+}
+
+/* 기한 상품 */
+#limit {
+  width: 100%;
+  height: 300px;
+  background: linear-gradient(to right, #7676be, #76a2be, #7676be);
+  margin-bottom: 100px;
+  display: flex;
+  align-items: center;
+}
+
+#limit .limit-inner {
+  width: 1290px;
+  margin: 0 auto;
+}
+
+#limit .limit-inner .limit-text {
+  width: 236px;
+  height: 170px;
+  float: left;
+  margin-left: 50px;
+  margin-right: 54px;
+}
+
+#limit .limit-inner .limit-text .copyright {
+  width: 236px;
+  height: 26px;
+  font-size: 18px;
+  font-weight: 600;
+  display: inline-block;
+  text-align: center;
+  color: #FCF9F9;
+}
+
+#limit .limit-inner .limit-text .limit-title {
+  width: 236px;
+  height: 144px;
+  font-size: 50px;
+  font-weight: bold;
+  display: inline-block;
+  text-align: center;
+  color: #FCF9F9;
+}
+
+#limit .limit-inner .limit-text .limit-title .today {
+  color: #FFF4A7;
+}
+
+#limit .limit-inner .limit-products {
+  width: 950px;
+  height: 180px;
+  float: right;
+  display: flex;
+  align-items: center;
+}
+
+#limit .limit-inner .limit-products .limit-arrow {
+  width: 30px;
+  height: 180px;
+  padding: 0;
+  margin-right: 30px;
+  background: transparent;
+  border: none;
+}
+
+#limit .limit-inner .limit-products .limit-arrow:nth-last-child(1) {
+  margin: 0;
+  margin-left: 30px;
+}
+
+.limit-inner .limit-products .limit-arrow img {
+  width: 30px;
+  height: 15px;
+  background-image: 30px 15px;
+}
+
+#limit .limit-inner .limit-products .product {
+  width: 156px;
+  height: 180px;
+  display: inline-block;
+  font-size: 14px;
+  background-color: rgb(255, 255, 255, 0.5);
+  box-shadow: 0px 0px 3px #c4c4c4;
+  text-align: center;
+  border-radius: 5px;
+}
+
+#limit .limit-inner .limit-products .product:nth-child(-n+5) {
+  margin-right: 20px;
+}
+
+#limit .limit-inner .limit-products .product .product-img {
+  width: 116px;
+  height: 106px;
+  background-size: cover;
+  background-position: center;
+  margin: 20px 20px 14px 20px;
+}
+
+#limit .limit-inner .limit-products .product .picture1 {
+  background-image: url(images/product/macbook.png);
+}
+#limit .limit-inner .limit-products .product .picture2 {
+  background-image: url(images/product/macStudio_front.png);
+  background-size: 116px 67px;
+  background-repeat: no-repeat;
+}
+#limit .limit-inner .limit-products .product .picture3 {
+  background-image: url(images/product/a53.png);
+}
+#limit .limit-inner .limit-products .product .picture4 {
+  background-image: url(images/product/tclT72.png);
+}
+#limit .limit-inner .limit-products .product .picture5 {
+  background-image: url(images/product/ghostwire.png);
+}
+
+
+#limit .limit-inner .limit-products .product .product-name {
+  width: 156px;
+  height: 20px;
+}
+
+/* 최신 예판 */
+#new {
+  width: 100%;
+  height: 562px;
+  margin-bottom: 100px;
+}
+
+#new .new-inner {
+  width: 1410px;
+  margin: 0 auto;
+}
+
+#new .new-inner .new-box {
+  display: flex;
+  align-items: center;
+}
+
+#new .new-inner .new-arrow {
+  width: 30px;
+  height: 40px;
+  margin-right: 30px;
+  background-image: url(images/icons/new-arrow.png);
+  background-size: 30px 40px;
+  background-position: center;
+  border:none;
+  background-color: transparent;
+}
+
+#new .new-inner .new-arrow:nth-last-child(1) {
+  transform: scaleX(-1);
+  margin: 0;
+  margin-left: 30px;
+}
+
+#new .new-inner .new-products {
+  width: 1290px;
+  height: 482px;
+  display: flex;
+}
+
+/* 큰이미지 */
+#new .new-inner .new-products .product-accent {
+  width: 288px;
+  height: 482px;
+  margin-right: 20px;
+}
+
+#new .new-inner .new-products .product-accent .new-accent {
+  width: 288px;
+  height: 384px;
+}
+
+#new .new-inner .new-products .product-accent .new-img1 {
+  background-image: url(images/product/smarts/iphoneSe.jpg);
+  background-size: cover;
+  background-position: center;
+}
+
+#new .new-inner .new-products .product-accent .new-img4 {
+  background-image: url(images/product/tclhdled.jpg);
+  background-size: cover;
+  background-position: center;
+}
+
+#new .new-inner .new-products .product-accent .new-company {
+  width: 288px;
+  height: 20px;
+  font-size: 14px;
+  font-weight: 500;
+  margin-top: 10px;
+  display: inline-block;
+}
+
+#new .new-inner .new-products .product-accent .new-title, .new-price {
+  width: 288px;
+  height: 26px;
+  font-size: 18px;
+  font-weight: 300;
+  display: inline-block;
+}
+
+#new .new-inner .new-products .product-accent .new-title {
+  margin-top: 10px;
+  margin-bottom: 6px;
+}
+
+/* 작은 이미지 */
+#new .new-inner .new-products .product-normal {
+  width: 211px;
+  height: 384px;
+  margin-right: 20px;
+}
+
+#new .new-inner .new-products .product-normal:nth-last-child(1) {
+  margin: 0;
+  margin-left: 1px;
+}
+
+#new .new-inner .new-products .product-normal .new-normal {
+  width: 211px;
+  height: 260px;
+}
+
+#new .new-inner .new-products .product-normal .new-img2 {
+  background-image: url(images/banners/eldenringedition.jpeg);
+  background-size: cover;
+  background-position: center;
+}
+
+#new .new-inner .new-products .product-normal .new-img3 {
+  background-image: url(images/product/galaxybook.jpg);
+  background-size: cover;
+  background-position: center;
+}
+
+#new .new-inner .new-products .product-normal .new-img5 {
+  background-image: url(images/banners/skul.PNG);
+  background-size: cover;
+  background-position: center;
+}
+
+#new .new-inner .new-products .product-normal .new-company {
+  margin-top: 10px;
+  font-size: 14px;
+  font-weight: 500;
+  display: block;
+}
+
+#new .new-inner .new-products .product-normal .new-title, .new-price {
+  font-size: 18px;
+  font-weight: 300;
+  display: block;
+}
+
+#new .new-inner .new-products .product-normal .new-title {
+  margin-top: 10px;
+  margin-bottom: 6px;
+}
+
+
+/* 모음 */
+#allproduct {
+  width: 100%;
+  height: 3950px;
+}
+
+#allproduct .allproduct-inner {
+  width: 1388px;
+  height: 3950px;
+  margin-left: 207px;
+}
+
+/* 카테고리 */
+#allproduct .allproduct-inner .categories {
+  width: 182px;
+  height: 3950px;
+  text-align: right;
+  position: relative;
+  float: left;
+}
+
+#allproduct .allproduct-inner .categories h1 {
+  width: 132px;
+  height: 40px;
+  margin-bottom: 30px;
+}
+
+#allproduct .allproduct-inner .categories .category {
+  width: 132px;
+  height: 245px;
+  margin-right: 50px;
+}
+
+.allproduct-inner .categories .category .category-btn {
+  width: 132px;
+  display: block;
+  float: right;
+  margin-bottom: 30px;
+  border: none;
+  background-color: transparent;
+  color: #222;
+  text-align: right;
+  padding: 0;
+  cursor: pointer;
+}
+
+.allproduct-inner .categories .category .choose{
+  font-size: 20px;
+  font-weight: bold;
+  color: #51AEF0;
+  text-align: right;
+  padding: 0;
+  cursor: pointer;
+}
+
+.allproduct-inner .categories .category .category-btn:nth-last-child(1) {
+  margin: 0;
+}
+
+/* 라인 */
+#allproduct .allproduct-inner .categories .ap-line {
+  position: absolute;
+  width: 1px;
+  height: 3950px;
+  background-color: #C4C4C4;
+  right: 0;
+  top: 0;
+}
+
+/* 제품 모음 */
+#allproduct .allproduct-inner .all {
+  width: 1155px;
+  height: 3950px;
+  float: right;
+}
+
+/* 모든 제품 모음 */
+.allproduct-inner .all .products {
+  width: 760px;
+  height: 630px;
+  float: right;
+}
+
+.allproduct-inner .all .box {
+  margin-bottom: 100px;
+}
+
+.allproduct-inner .all .products .product{
+  width: 240px;
+  height: 290px;
+  float: left;
+  margin-right: 20px;
+}
+
+.allproduct-inner .all .accent {
+  width: 375px;
+  height: 575px;
+  float: left;
+}
+
+.allproduct-inner .all .accent .accent-img{
+  width: 375px;
+  height: 473px;
+  background-size: cover;
+  background-position: center;
+}
+
+.allproduct-inner .all .box {
+  height: 710px;
+}
+
+.allproduct-inner .all h1{
+  float: none;
+  margin-bottom: 40px;
+}
+
+.allproduct-inner .all .product-all  {
+  height: 630px;
+}
+
+
+.allproduct-inner .all .products .product:nth-child(3n) {
+  margin: 0;
+}
+
+.allproduct-inner .all .products .product:nth-child(-n+3) {
+  margin-bottom: 50px;
+}
+
+.allproduct-inner .all .products .product .product-img {
+  width: 240px;
+  height: 192px;
+}
+
+/* 모든 강조 텍스트 */
+.allproduct-inner .all .accent .accent-company {
+  margin-top: 10px;
+  font-size: 14px;
+  font-weight: 500;
+  display: block;
+}
+
+.allproduct-inner .all .accent .accent-title, .accent-price {
+  font-size: 18px;
+  font-weight: 300;
+  display: block;
+}
+
+.allproduct-inner .all .accent .accent-title {
+  margin-top: 10px;
+  margin-bottom: 6px;
+}
+
+/* 모든 노말 텍스트 */
+.allproduct-inner .all .product .all-company {
+  margin-top: 10px;
+  font-size: 14px;
+  font-weight: 500;
+  display: block;
+}
+
+.allproduct-inner .all .product .all-title, .all-price {
+  font-size: 18px;
+  font-weight: 300;
+  display: block;
+}
+
+.allproduct-inner .all .product .all-title {
+  margin-top: 10px;
+  margin-bottom: 6px;
+}
+
+.all .product-img {
+  background-size: cover;
+  background-position: center;
+}
+
+/* accent img */
+.all .accent .img1 {
+  background-position: bottom;
+  background-image: url(images/product/best/iphone_13_series.jpg);
+}
+.all .accent .img2 {
+  background-image: url(images/product/games/Elden_ring_edition.jpeg);
+}
+.all .accent .img3 {
+  background-image: url(images/product/smarts/iphone_13_series.jpg);
+}
+.all .accent .img4 {
+  background-image: url(images/product/laptops/ipad_pro_5ge.jpg);
+}
+.all .accent .img5 {
+  background-image: url(images/product/moniters/interpixel.PNG);
+}
+
+/* 베스트 */
+.all .best1 {
+  background-image: url(images/product/best/macStudio.jpeg);
+}
+.all .best2 {
+  background-image: url(images/product/best/galaxy_A53.PNG);
+}
+.all .best3 {
+  background-image: url(images/product/best/Elden_ring_edition.jpeg);
+}
+.all .best4 {
+  background-image: url(images/product/best/Macbook_Air.jpg);
+}
+.all .best5 {
+  background-image: url(images/product/best/GRAM_12.PNG);
+}
+.all .best6 {
+  background-image: url(images/product/best/DOLMEN.PNG);
+}
+
+/* 게임 */
+.all .games1 {
+  background-image: url(images/product/games/DOLMEN.PNG);
+}
+.all .games2 {
+  background-image: url(images/product/games/starwars.PNG);
+}
+.all .games3 {
+  background-image: url(images/product/games/demonslayer.jpg);
+}
+.all .games4 {
+  background-image: url(images/product/games/13gibeyong.PNG);
+}
+.all .games5 {
+  background-image: url(images/product/games/soul.jpg);
+}
+.all .games6 {
+  background-image: url(images/product/games/skul.PNG);
+}
+
+/* 스마트폰 */
+.all .smarts1 {
+  background-image: url(images/product/smarts/galaxy_A53.PNG);
+}
+.all .smarts2 {
+  background-image: url(images/product/smarts/galaxy_watch_4.jpg);
+}
+.all .smarts3 {
+  background-image: url(images/product/smarts/gt2.png);
+}
+.all .smarts4 {
+  background-image: url(images/product/smarts/galaxy_S22_ultra.jpg);
+}
+.all .smarts5 {
+  background-image: url(images/product/smarts/apple_watch_7.jpg);
+}
+.all .smarts6 {
+  background-image: url(images/product/smarts/iphoneSe.jpg);
+}
+
+/* 스마트폰 */
+.all .laptops1 {
+  background-image: url(images/product/laptops/Asus_pro_15.PNG);
+}
+.all .laptops2 {
+  background-image: url(images/product/laptops/galaxy_tab_S7.jpg);
+}
+.all .laptops3 {
+  background-image: url(images/product/laptops/pro_m1x.jpg);
+}
+.all .laptops4 {
+  background-image: url(images/product/laptops/Macbook_Air.jpg);
+}
+.all .laptops5 {
+  background-image: url(images/product/laptops/GRAM_12.PNG);
+}
+.all .laptops6 {
+  background-image: url(images/product/laptops/alldaylong.jpeg);
+}
+
+/* 모니터 */
+.all .moniters1 {
+  background-image: url(images/product/moniters/nanocell.png);
+}
+.all .moniters2 {
+  background-image: url(images/product/moniters/sam_32uhd.jpg);
+}
+.all .moniters3 {
+  background-image: url(images/product/moniters/tcl_qled_4k.jpg);
+}
+.all .moniters4 {
+  background-image: url(images/product/moniters/advence.jpg);
+}
+.all .moniters5 {
+  background-image: url(images/product/moniters/venq.jpg);
+}
+.all .moniters6 {
+  background-image: url(images/product/moniters/sam_207.jpg);
+}
+
+
+/* 제휴사 */
+#associate {
+  width: 100%;
+  height: 202px;
+  margin-top: 150px;
+  margin-bottom: 100px;
+}
+
+#associate .associate-inner {
+  width: 1290px;
+  height: 202px;
+  margin: 0 auto;
+}
+
+#associate .associate-inner .companys {
+  height: 100px;
+}
+
+#associate .associate-inner .company {
+  width: 321px;
+  height: 100px;
+  margin-right: 2px;
+  background-size: cover;
+  background-position: center;
+  float: left;
+  box-shadow: 0px 0px 3px #c4c4c4;
+}
+
+#associate .associate-inner .company:nth-child(4n) {
+  margin: 0;
+}
+
+#associate .associate-inner .company:nth-child(-n+5) {
+  margin-bottom: 2px;
+}
+
+.associate-inner .img1 {
+  background-image: url(images/logos/intra.png);
+}
+.associate-inner .img2 {
+  background-image: url(images/logos/touch.png);
+}
+.associate-inner .img3 {
+  background-image: url(images/logos/ssg.png);
+}
+.associate-inner .img4 {
+  background-image: url(images/logos/namco.png);
+}
+.associate-inner .img5 {
+  background-image: url(images/logos/gamepia.png);
+}
+.associate-inner .img6 {
+  background-image: url(images/logos/nintendo.png);
+}
+.associate-inner .img7 {
+  background-image: url(images/logos/samsung.png);
+}
+.associate-inner .img8 {
+  background-image: url(images/logos/lg.png);
+}
+
+/* 푸터 */
+#footer {
+  width: 100%;
+  height: 292px;
+  display: flex;
+  align-items: center;
+  background-color: #333333;
+}
+
+#footer .footer-inner {
+  width: 1290px;
+  height: 182px;
+  margin: 0 auto;
+}
+
+#footer .footer-inner .first-area {
+  height: 36px;
+  
+}
+
+#footer .footer-inner .first-area .list {
+  width: 683px;
+  height: 20px;
+  float: left;
+  display: flex;
+  align-items: center;
+}
+
+#footer .footer-inner .first-area .word {
+  float: left;
+  border: none;
+  background-color: transparent;
+  font-size: 14px;
+  font-weight: 300;
+  color: #FCF9F9;
+  padding: 0;
+  cursor: pointer;
+}
+
+#footer .footer-inner .first-area .more-accent {
+  font-weight: 500;
+  color: #F9C92E;
+}
+
+#footer .footer-inner .first-area .accent {
+  font-weight: 500;
+}
+
+#footer .footer-inner .first-area .list .rod {
+  width: 2px;
+  height: 14px;
+  background-color: #FCF9F9;
+  float: left;
+  margin-left: 16px;
+  margin-right: 16px;
+}
+
+#footer .footer-inner .first-area .sns {
+  width: 244px;
+  height: 36px;
+  float: right;
+}
+
+#footer .footer-inner .first-area .sns-btn {
+  width: 36px;
+  height: 36px;
+  float: right;
+  margin-left: 16px;
+  padding: 0;
+  background-size: cover;
+  background-position: center;
+  background-color: transparent;
+  border: none;
+}
+
+#footer .footer-inner .first-area .instagram {
+  background-image: url(images/sns/instagram.png);
+}
+#footer .footer-inner .first-area .twitter {
+  background-image: url(images/sns/twitter.png);
+}
+#footer .footer-inner .first-area .kakao {
+  background-image: url(images/sns/kakao.png);
+}
+#footer .footer-inner .first-area .facebook {
+  background-image: url(images/sns/facebook.png);
+}
+#footer .footer-inner .first-area .youtube {
+  background-image: url(images/sns/youtube.png);
+}
+
+#footer .footer-inner .first-area .sns-btn:nth-last-child(1) {
+  margin: 0;
+}
+
+#footer .footer-inner .second-area {
+  width: 773px;
+  height: 122px;
+  margin-top: 24px;
+  font-size: 14px;
+}
+
+#footer .footer-inner .second-area .introduce {
+  color: #FCF9F9;
+  margin: 0;
+  margin-bottom: 30px;
+  line-height: 26px;
+}
+
+#footer .footer-inner .second-area .copyright {
+  color: #F9C92E;
+  margin: 0;
+}
